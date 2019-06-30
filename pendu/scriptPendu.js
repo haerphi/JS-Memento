@@ -1,0 +1,1 @@
+const tabMot =  ["pomme", "poire", "kiwi", "fraise", "banae"];;
