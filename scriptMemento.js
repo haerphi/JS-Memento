@@ -1,12 +1,20 @@
 (() => {
     // ~~ PARTIE 1 ~~
-    // déclaration de variable
+    // déclaration de variable avec le contenu "Hello world"
 
     // déclara de constante
 
     // déclaration d'un tableau de fruits : pomme, banane, poire
 
     // avec une alerte affiche le 2eme element du tableaus (banane)
+    
+    
+    // Les tableaux
+    // à la liste(tableau) de fruits rajoute "kiwi"
+
+    // à la liste(tableau) de fruits trouve l'index de "poire"
+
+    // à la liste(tableau) de fruits regarde s'il y a "abrico"
 
     // avec un boucle FOR affiche tout les élément dans la console
     console.log("Tableau fruit avec boucle FOR : ");
@@ -25,23 +33,14 @@
 
     // avec une boucle WHILE demandes lui s'il râle et tant qu'il ne dit pas "oui", re-demande lui. (tu peux aussi te rensigner sur la boucle do...while)
 
-    // Les tableaux
-    // à la liste(tableau) de fruits rajoute le fruit "kiwi"
-
-    // à la liste(tableau) de fruits supprime le fruit "banane"
-
-    // à la liste(tableau) de fruits trouve l'index de "poire"
-
-    // à la liste(tableau) de fruits regarde s'il y a "abrico"
-
     // ~~ PARTIE 2 ~~
-    // 1.1 Récuperes le text "J'aime les cacaouette" dans via son ID - document.getElementById("id").innerText
+    // 1.1 Récuperes le text "J'aime les cacaouette" dans via son ID (id = traget1) - document.getElementById("id").innerText
 
     // 1.2 Modifie la phrase juste avant par autre chose va innerText ou innerHtml ou textContent
 
-    // 2 Rajoute l'évement click au bonton adéquat et affiche une alerte lorsque l'on click dessus !
+    // 2 Rajoute l'évement click au bonton (id = buttonAlert) et affiche une alerte lorsque l'on click dessus !
 
-    // 3.1 au clic sur le bouton, récupere le contenu de l'input
+    // 3.1 au clic sur le bouton (id = buttonInput), récupere le contenu de l'input (id = inputPseudo)
 
     //3.2 modifier le tagert ci-dessous pour qu'il affiche le nombre de caractère que possède l'input
         //(le changement doit se faire en temps réel et non juste quand on clic sur le bouton)
