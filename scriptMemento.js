@@ -40,9 +40,9 @@
 
     // 2 Rajoute l'évement click au bonton (id = buttonAlert) et affiche une alerte lorsque l'on click dessus !
 
-    // 3.1 au clic sur le bouton (id = buttonInput), récupere le contenu de l'input (id = inputPseudo)
+    // 3.1 au clic sur le bouton (id = buttonInput), récupere le contenu de l'input (id = inputT)
 
-    //3.2 modifier le tagert ci-dessous pour qu'il affiche le nombre de caractère que possède l'input
+    //3.2 modifier le tagert(id = targetInputLength) pour qu'il affiche le nombre de caractère que possède l'input (id = inputT)
         //(le changement doit se faire en temps réel et non juste quand on clic sur le bouton)
 
     // ~~ BONUS ~~
