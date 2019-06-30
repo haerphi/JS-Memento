@@ -63,8 +63,8 @@
 
     // 2.1 créer une class Personne qui possèdera le nom et prénom
 
-    // 2.2 créer une liste dans laquelle tu ajouteras une nouvelle personne à chaque fois que quelqu'un clic sur le bouton<br>
-        // /!\ ne créer pas une personne si les 2 champs sont vides-
+    // 2.2 créer une liste dans laquelle tu ajouteras une nouvelle personne à chaque fois que quelqu'un clic sur le bouton (id = personneClass)
+        // /!\ ne créer pas une personne si les 2 champs sont vides
         
 
 
