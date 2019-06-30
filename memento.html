@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Js memento</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1> Js memento </h1>
+                <nav>
+                    <ul>
+                        <li><a href="#intro">Intro</a></li>
+                        <li><a href="#partie1">Base de Js</a></li>
+                        <li><a href="#partie2">Js & Html</a></li>
+                        <li><a href="#partie3">Les fonctions</a></li>
+                        <li><a href="#partie4">La POO</a></li>
+                        <li><a href="#partie5">Asynchronous & fetch</a></li>
+
+                    </ul>
+                </nav>
+            </header>
+            <div class="content">
+                <section id="intro">
+                    <h2>Intro</h2>
+                    <p>Hello, voici un petit "résumé" à remplir avec pas mal de petite chose en JS !</p>
+                    <p>Avec ceci vous pourrez faire un petit tour dans vos connaisances JS</p>
+                    <p>PS: essayer de ne pas trop faire attention à l'orthographe et s'il y a des erreurs n'hésiter pas à le dire</p>
+                </section>
+                <section id="partie1">
+                    <h2>Partie 1 : Base de JS</h2>
+                    <p>La première partie de ce memento est un rappel des bases du JS</p>
+                    <ul>
+                        <li> Déclaratino de variable, constante et tableau</li>
+                        <li> Les boucles FOR, FOREACH et WHILE </li>
+                        <li> Les tableaux</li>
+                    </ul>
+                </section>
+                <section id="partie2">
+                    <h2>Partie 2 : JS et HTML</h2>
+                    <article id="recupByID">
+                        <h3>innerText - innerHtml - textContent</h3>
+                        <p>1 Récuperer et modifie le texte en dessous de moi !</p>
+                        <p id="target1">J'aime les cacaouette</p>
+                    </article>
+
+                    <article id="buttons">
+                        <h3>eventlistener</h3>
+                        <p>2. Au clic sur le bouton affiche une alerte !</p>
+                        <button id="buttonAlert">Alert !</button>
+                    </article>
+
+                    <article id="inputs">
+                        <h3>les inputs</h3>
+                        <p>3.1 au clic sur le bouton, récupere le contenu de l'input</p>
+                        <label for="inputT">pseudo</label>
+                        <input type="text" name="inputT" id="inputT" value=""/>
+                        <button id="buttonInput">Affiche pseudo</button>
+                        <p>3.2 modifier le tagert ci-dessous pour qu'il affiche le nombre de caractère que possède l'input <br>
+                        (le changement doit se faire en temps réel et non juste quand on clic sur le bouton)</p>
+                        <p id="targetInputLength" style="color:grey">??</p>
+                    </article>
+                </section>
+
+                <section id="partie3">
+                    <article id="presentationFonction">
+                        <h2>Partie 3 : Js - les fonctions</h2>
+                        <p>Les fonctions permettent d'éviter le répétement de code...</p>
+                        <p>Par exemple : plutôt que de devoir écrire <code>Math.floor(Math.random()*100)</code> pour obtenir un chiffre entre 0 et 100 exclus</p>
+                        <p>Nous pouvons créer une fonction ! <br>
+                        Il n'y a aucune différence entre une fonction normal et fonction flechée, c'est juste 2 manières d'écrire la même chose.
+                        </p>
+                        <pre>
+    //fonction normal
+    function getRandomInt(min, max){
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    //fonction flechée
+    const getRandomInt = (min, max) => {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    let nombreAleatoire = getRandomInt(1, 101);
+    //donne un nombre aléatoire entre 1 et 100
+                        </pre>
+                        <p>
+                            Dans l'exemple ci-dessus, on crée un fonction nommée "<code>getRandomInt</code>" avec 2 paramètres :
+                            <ul>
+                                <li>"<code>min</code>" qui sera la valeur minimal de l'aléatoire </li>
+                                <li>"<code>max</code>" qui sera la valeur maximal excluse par l'aléatoire.</li>
+                            </ul>
+                        </p>
+                    </article>
+                    <article id="fonction">
+                        <h3>Mise en place et utilisation d'une fonction</h3>
+                        <appele> 1. Réecrit dans le code la fonction <code>getRandomInt</code> <br>
+                        1.2 Appele là une fois avec un min de 1 et un max de 3 et une autre fois avec un min de 0 et un max de 101</h2>
+                    </article>
+
+                    <article id="fonction2">
+                        <h3>Autre exemple d'utilisation de fonction</h3>
+                        <p>2. Créer une fonction pour calculer le périmètre d'un carré, et son aire</p>
+                    </article>
+                </section>
+
+                <section id="partie4">
+                    <h2>Partie 4 : Js - POO</h2>
+                    <article id="presentationObjet">
+                        <h3>Les objets - Intro</h3>
+                        <p>Les objets sont des "variables" avec plusieurs autres "variables" (Il faut prendre cette phrase avec des pincettes)<br>
+                            Avec des termes plus "technique", un objet est composé de propriété qui possède une valeur.
+                        </p>
+                    </article>
+
+                    <article id="objetJS">
+                        <h3>Les objets</h3>
+                        <p>1.1 créer un objet nommé chat avec les propriétés nom et couleur.</p>
+                        <p>1.2 affiche dans la console le nom du chat et sa couleur sous cette forme "Mon chat NOM est de couleur COULEUR" (remplaces NOM par le nom du chat et COULEUR par sa couleur)</p>
+
+                    </article>
+                    <article id="presentationClassJS">
+                        <h3>Les class - Intro</h3>
+                        <blockquote cite="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Classes">
+                            <p>En réalité, les classes sont juste des fonctions spéciales. Ainsi, les classes sont définies de la même façon que les fonctions : par déclaration, ou par expression.</p>
+                            <footer>MDN web docs</footer>
+                        </blockquote>
+                        <p>tout ce que je peux rajouter c'est un genre de "moule"</p>
+                        <p>Par exemple on peut créer une class voiture avec des propriétés marque, model, couleur...</p>
+                        <p>De cette on pourra en faire découller une voiture de marque Audi, model A3 de couleur blanche</p>
+                        <p>Mais aussi si on le souhaite une autre voiture de marque Toyota, model Yaris de couleur grise</p>
+                        <p>Par exemple nous allons créer une class <code>Voiture</code> avec différent attribut et une méthode <code>Avancer</code> parce que oui, une voiture ça avance... <br>
+                        (méthode et fonction font exactement la même chose mais on appele celà méthode quand c'est dans un objet).</p>
+                        <pre>
+    class Voiture{
+        constructor(marque, model, couleur){
+            this.marque = marque;
+            this.model = model;
+            this.couleur = couleur;
+        }
+        avancer(){
+            console.log("vrooum");
+        }
+    }
+
+    //Création d'une voiture de marque Audi
+    let audi = new Voiture("Audi", "A3", "Noir");
+
+    //Création d'une voiture de marque Toyota
+    let toyota = new Voiture("Toyota", "Yaris", "Gris");
+
+    //et les 2 voitures que l'on a crée possède la méthode "avancer"
+    audi.avancer();
+    toyota.avancer();
+
+                        </pre>
+                    </article>
+
+                    <article id="classJS">
+                        <h3>Class</h3>
+                        <p>2.1 créer une class <code>Personne</code> qui possèdera le nom et prénom</p>
+
+                        <p>2.2 rajoute à la class <code>Personne</code> une méthode <code>bonjour</code> qui affichera dans la console "Bonjour, je m'appele NOM PRENOM"</p>
+
+                        <p>2.3 créer une liste dans laquelle tu ajouteras une nouvelle personne à chaque fois que quelqu'un clic sur le bouton<br>
+                            /!\ ne créer pas une personne si les champs sont vides
+                        </p>
+
+                        <label for="nomClass">Nom: </label> <input type="text" id="nomClass" name="nomClass"><br>
+                        <label for="prenomClass">Prenom: </label> <input type="text" id="prenomClass" name="prenomClass">
+                        <button id="personneClass">Submit</button>
+
+                    </article>
+                </section>
+                <section id="partie5">
+                    <article id="presentationAsynchronousFetch">
+                        <h2>Asynchronous & fetch</h2>
+                        <p>Coming soon ?</p>
+                    </article>
+
+                </section>
+            </div>
+        </div>
+
+        <script src="./scriptMemento.js"></script>
+    </body>
+</html>
+
